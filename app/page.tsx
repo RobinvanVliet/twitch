@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Page() {
   return (
-    <p>
-      Only authenticated users can see this
-    </p>
+    <div>
+      <h1>Dashboard</h1>
+      <UserButton afterSignOutUrl="/"/>
+    </div>
     );
 }
