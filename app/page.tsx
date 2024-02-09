@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 
-export default function Home() {
+export default function Page() {
   return (
-    <Button size="lg"> 
-      Click me
-    </Button>
+    <p>
+      Only authenticated users can see this
+    </p>
     );
 }
